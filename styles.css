@@ -56,9 +56,10 @@ section {
 @media screen and (min-width: 576px) {
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat (3, 1fr);
         grid-template-rows: 50px 190px 100px auto 50px;
-        grid-template-areas: "a c c"
+        grid-template-areas:
+                         "a c c"
                          "b c c"
                          "b e d"
                          "b e ."
